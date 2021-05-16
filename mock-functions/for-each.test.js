@@ -1,5 +1,5 @@
 const forEach = require('./for-each');
-const mockCallback = jest.fn(x => 100 + x);
+const mockCallback = jest.fn(x => 100 + x); // `jest.fn(implementation)` is an abbreviation for `jest.fn().mockImplementation(implementation)`
 
 forEach([0, 5, 10], mockCallback);
 
